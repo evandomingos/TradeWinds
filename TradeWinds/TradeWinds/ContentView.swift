@@ -12,7 +12,7 @@ struct ToolbarIcon: View {
     
     var body: some View {
         Image(systemName: systemName)
-            .font(.system(size: 40))
+            .font(.system(size: 20))
             .foregroundColor(.white)
             .frame(width: 40, height: 40)
     }
@@ -47,17 +47,16 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .overlay(
                         HStack {
-                            ToolbarIcon(systemName: "cloud.sun")
-                           // Spacer()
-                            ToolbarIcon(systemName: "dollar.sign.square")
-                            //Spacer()
-                            ToolbarIcon(systemName: "compass.drawing")
-                            //Spacer()
-                            ToolbarIcon(systemName: "wrench.and.screwdriver.fill")
-                         //   Spacer()
-                            ToolbarIcon(systemName: "bag")
                             Spacer()
-                           
+                            ToolbarIcon(systemName: "cloud.sun")
+                           Spacer()
+                            ToolbarIcon(systemName: "dollarsign")
+                            Spacer()
+                            ToolbarIcon(systemName: "compass.drawing")
+                            Spacer()
+                            ToolbarIcon(systemName: "wrench.and.screwdriver")
+                            Spacer()
+                            ToolbarIcon(systemName: "bag")
                         }
                     )
             }
