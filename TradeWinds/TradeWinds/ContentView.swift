@@ -48,16 +48,16 @@ struct ContentView: View {
                     .overlay(
                         HStack {
                             ToolbarIcon(systemName: "cloud.sun")
-                            Spacer()
+                           // Spacer()
                             ToolbarIcon(systemName: "dollar.sign.square")
-                            Spacer()
+                            //Spacer()
                             ToolbarIcon(systemName: "compass.drawing")
-                            Spacer()
+                            //Spacer()
                             ToolbarIcon(systemName: "wrench.and.screwdriver.fill")
-                            Spacer()
+                         //   Spacer()
                             ToolbarIcon(systemName: "bag")
                             Spacer()
-                            ToolbarIcon(systemName: "ellipsis.bubble")
+                           
                         }
                     )
             }
