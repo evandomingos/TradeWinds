@@ -12,7 +12,7 @@ struct ToolbarIcon: View {
     
     var body: some View {
         Image(systemName: systemName)
-            .font(.system(size: 20))
+            .font(.system(size: 40))
             .foregroundColor(.white)
             .frame(width: 40, height: 40)
     }
