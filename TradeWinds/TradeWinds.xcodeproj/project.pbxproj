@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20283DB32A24E4760092A1EB /* TradeWindsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DB22A24E4760092A1EB /* TradeWindsApp.swift */; };
+		20283DB52A24E4760092A1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DB42A24E4760092A1EB /* ContentView.swift */; };
+		20283DB72A24E4770092A1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20283DB62A24E4770092A1EB /* Assets.xcassets */; };
+		20283DBA2A24E4770092A1EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20283DB92A24E4770092A1EB /* Preview Assets.xcassets */; };
+		20283DC42A24E4770092A1EB /* TradeWindsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DC32A24E4770092A1EB /* TradeWindsTests.swift */; };
+		20283DCE2A24E4770092A1EB /* TradeWindsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DCD2A24E4770092A1EB /* TradeWindsUITests.swift */; };
+		20283DD02A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DCF2A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20283DC02A24E4770092A1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20283DA72A24E4760092A1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20283DAE2A24E4760092A1EB;
+			remoteInfo = TradeWinds;
+		};
+		20283DCA2A24E4770092A1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20283DA72A24E4760092A1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20283DAE2A24E4760092A1EB;
+			remoteInfo = TradeWinds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20283DAF2A24E4760092A1EB /* TradeWinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeWinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20283DB22A24E4760092A1EB /* TradeWindsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsApp.swift; sourceTree = "<group>"; };
+		20283DB42A24E4760092A1EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20283DB62A24E4770092A1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20283DB92A24E4770092A1EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20283DBF2A24E4770092A1EB /* TradeWindsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeWindsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20283DC32A24E4770092A1EB /* TradeWindsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsTests.swift; sourceTree = "<group>"; };
+		20283DC92A24E4770092A1EB /* TradeWindsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeWindsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20283DCD2A24E4770092A1EB /* TradeWindsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsUITests.swift; sourceTree = "<group>"; };
+		20283DCF2A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20283DAC2A24E4760092A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DBC2A24E4770092A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DC62A24E4770092A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20283DA62A24E4760092A1EB = {
+			isa = PBXGroup;
+			children = (
+				20283DB12A24E4760092A1EB /* TradeWinds */,
+				20283DC22A24E4770092A1EB /* TradeWindsTests */,
+				20283DCC2A24E4770092A1EB /* TradeWindsUITests */,
+				20283DB02A24E4760092A1EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20283DB02A24E4760092A1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20283DAF2A24E4760092A1EB /* TradeWinds.app */,
+				20283DBF2A24E4770092A1EB /* TradeWindsTests.xctest */,
+				20283DC92A24E4770092A1EB /* TradeWindsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20283DB12A24E4760092A1EB /* TradeWinds */ = {
+			isa = PBXGroup;
+			children = (
+				20283DB22A24E4760092A1EB /* TradeWindsApp.swift */,
+				20283DB42A24E4760092A1EB /* ContentView.swift */,
+				20283DB62A24E4770092A1EB /* Assets.xcassets */,
+				20283DB82A24E4770092A1EB /* Preview Content */,
+			);
+			path = TradeWinds;
+			sourceTree = "<group>";
+		};
+		20283DB82A24E4770092A1EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				20283DB92A24E4770092A1EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20283DC22A24E4770092A1EB /* TradeWindsTests */ = {
+			isa = PBXGroup;
+			children = (
+				20283DC32A24E4770092A1EB /* TradeWindsTests.swift */,
+			);
+			path = TradeWindsTests;
+			sourceTree = "<group>";
+		};
+		20283DCC2A24E4770092A1EB /* TradeWindsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20283DCD2A24E4770092A1EB /* TradeWindsUITests.swift */,
+				20283DCF2A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift */,
+			);
+			path = TradeWindsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20283DAE2A24E4760092A1EB /* TradeWinds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20283DD32A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWinds" */;
+			buildPhases = (
+				20283DAB2A24E4760092A1EB /* Sources */,
+				20283DAC2A24E4760092A1EB /* Frameworks */,
+				20283DAD2A24E4760092A1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradeWinds;
+			productName = TradeWinds;
+			productReference = 20283DAF2A24E4760092A1EB /* TradeWinds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20283DBE2A24E4770092A1EB /* TradeWindsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20283DD62A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWindsTests" */;
+			buildPhases = (
+				20283DBB2A24E4770092A1EB /* Sources */,
+				20283DBC2A24E4770092A1EB /* Frameworks */,
+				20283DBD2A24E4770092A1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20283DC12A24E4770092A1EB /* PBXTargetDependency */,
+			);
+			name = TradeWindsTests;
+			productName = TradeWindsTests;
+			productReference = 20283DBF2A24E4770092A1EB /* TradeWindsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20283DC82A24E4770092A1EB /* TradeWindsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20283DD92A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWindsUITests" */;
+			buildPhases = (
+				20283DC52A24E4770092A1EB /* Sources */,
+				20283DC62A24E4770092A1EB /* Frameworks */,
+				20283DC72A24E4770092A1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20283DCB2A24E4770092A1EB /* PBXTargetDependency */,
+			);
+			name = TradeWindsUITests;
+			productName = TradeWindsUITests;
+			productReference = 20283DC92A24E4770092A1EB /* TradeWindsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20283DA72A24E4760092A1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					20283DAE2A24E4760092A1EB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					20283DBE2A24E4770092A1EB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 20283DAE2A24E4760092A1EB;
+					};
+					20283DC82A24E4770092A1EB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 20283DAE2A24E4760092A1EB;
+					};
+				};
+			};
+			buildConfigurationList = 20283DAA2A24E4760092A1EB /* Build configuration list for PBXProject "TradeWinds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20283DA62A24E4760092A1EB;
+			productRefGroup = 20283DB02A24E4760092A1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20283DAE2A24E4760092A1EB /* TradeWinds */,
+				20283DBE2A24E4770092A1EB /* TradeWindsTests */,
+				20283DC82A24E4770092A1EB /* TradeWindsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20283DAD2A24E4760092A1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20283DBA2A24E4770092A1EB /* Preview Assets.xcassets in Resources */,
+				20283DB72A24E4770092A1EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DBD2A24E4770092A1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DC72A24E4770092A1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20283DAB2A24E4760092A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20283DB52A24E4760092A1EB /* ContentView.swift in Sources */,
+				20283DB32A24E4760092A1EB /* TradeWindsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DBB2A24E4770092A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20283DC42A24E4770092A1EB /* TradeWindsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20283DC52A24E4770092A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20283DCE2A24E4770092A1EB /* TradeWindsUITests.swift in Sources */,
+				20283DD02A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20283DC12A24E4770092A1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20283DAE2A24E4760092A1EB /* TradeWinds */;
+			targetProxy = 20283DC02A24E4770092A1EB /* PBXContainerItemProxy */;
+		};
+		20283DCB2A24E4770092A1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20283DAE2A24E4760092A1EB /* TradeWinds */;
+			targetProxy = 20283DCA2A24E4770092A1EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20283DD12A24E4770092A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20283DD22A24E4770092A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20283DD42A24E4770092A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradeWinds/Preview Content\"";
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWinds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20283DD52A24E4770092A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradeWinds/Preview Content\"";
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWinds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20283DD72A24E4770092A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWindsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeWinds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradeWinds";
+			};
+			name = Debug;
+		};
+		20283DD82A24E4770092A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWindsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeWinds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradeWinds";
+			};
+			name = Release;
+		};
+		20283DDA2A24E4770092A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWindsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradeWinds;
+			};
+			name = Debug;
+		};
+		20283DDB2A24E4770092A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2L5F48Z7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradewindslabs.TradeWindsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradeWinds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20283DAA2A24E4760092A1EB /* Build configuration list for PBXProject "TradeWinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20283DD12A24E4770092A1EB /* Debug */,
+				20283DD22A24E4770092A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20283DD32A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20283DD42A24E4770092A1EB /* Debug */,
+				20283DD52A24E4770092A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20283DD62A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWindsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20283DD72A24E4770092A1EB /* Debug */,
+				20283DD82A24E4770092A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20283DD92A24E4770092A1EB /* Build configuration list for PBXNativeTarget "TradeWindsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20283DDA2A24E4770092A1EB /* Debug */,
+				20283DDB2A24E4770092A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20283DA72A24E4760092A1EB /* Project object */;
+}
