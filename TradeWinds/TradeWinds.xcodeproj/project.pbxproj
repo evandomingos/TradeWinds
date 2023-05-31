@@ -14,6 +14,7 @@
 		20283DC42A24E4770092A1EB /* TradeWindsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DC32A24E4770092A1EB /* TradeWindsTests.swift */; };
 		20283DCE2A24E4770092A1EB /* TradeWindsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DCD2A24E4770092A1EB /* TradeWindsUITests.swift */; };
 		20283DD02A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DCF2A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift */; };
+		20283DDD2A27832C0092A1EB /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20283DDC2A27832C0092A1EB /* BookingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		20283DC92A24E4770092A1EB /* TradeWindsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeWindsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20283DCD2A24E4770092A1EB /* TradeWindsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsUITests.swift; sourceTree = "<group>"; };
 		20283DCF2A24E4770092A1EB /* TradeWindsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeWindsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20283DDC2A27832C0092A1EB /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				20283DB22A24E4760092A1EB /* TradeWindsApp.swift */,
+				20283DDC2A27832C0092A1EB /* BookingViewController.swift */,
 				20283DB42A24E4760092A1EB /* ContentView.swift */,
 				20283DB62A24E4770092A1EB /* Assets.xcassets */,
 				20283DB82A24E4770092A1EB /* Preview Content */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20283DB52A24E4760092A1EB /* ContentView.swift in Sources */,
+				20283DDD2A27832C0092A1EB /* BookingViewController.swift in Sources */,
 				20283DB32A24E4760092A1EB /* TradeWindsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
