@@ -19,6 +19,8 @@ struct ToolbarIcon: View {
 }
 
 struct ContentView: View {
+    @State private var isExpanded = false
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all) // Set black background
@@ -36,32 +38,62 @@ struct ContentView: View {
             
             VStack {
                 Spacer()
-
-                Rectangle()
-                    .frame(height: 50) // Set toolbar ribbon height
-                    .foregroundColor(.blue) // Set black toolbar color
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.white, lineWidth: 2) // Set white outline
-                    )
-                    .padding(.horizontal)
-                    .overlay(
-                        HStack {
-                            Spacer()
-                            ToolbarIcon(systemName: "cloud.sun")
-                           Spacer()
-                            ToolbarIcon(systemName: "dollarsign")
-                            Spacer()
-                            ToolbarIcon(systemName: "compass.drawing")
-                            Spacer()
-                            ToolbarIcon(systemName: "wrench.and.screwdriver")
-                            Spacer()
-                            ToolbarIcon(systemName: "bag")
-                        }
-                    )
+                
+                HStack {
+                    if isExpanded {
+                        ExpandedToolbarView(isExpanded: $isExpanded)
+                    } else {
+                        Spacer()
+                    }
+                    
+                    Circle()
+                        .frame(width: 50, height: 50) // Set circle size
+                        .foregroundColor(.blue) // Set blue circle color
+                        .overlay(
+                            Image(systemName: "arrow.left")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .rotationEffect(.degrees(isExpanded ? 180 : 0))
+                                .onTapGesture {
+                                    withAnimation {
+                                        isExpanded.toggle()
+                                    }
+                                }
+                        )
+                }
+                .alignmentGuide(HorizontalAlignment.trailing) { _ in
+                    UIScreen.main.bounds.size.width - 60 // Adjust the value based on your needs
+                }
             }
-
         }
+    }
+}
+
+struct ExpandedToolbarView: View {
+    @Binding var isExpanded: Bool
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: isExpanded ? 20 : 25)
+            .foregroundColor(.blue)
+            .frame(height: 50)
+            .overlay(
+                HStack(spacing: 10) {
+                    ToolbarIcon(systemName: "cloud.sun")
+                    ToolbarIcon(systemName: "dollarsign")
+                    ToolbarIcon(systemName: "compass.drawing")
+                    ToolbarIcon(systemName: "wrench.and.screwdriver")
+                    ToolbarIcon(systemName: "bag")
+                }
+                .padding()
+            )
+            .offset(x: isExpanded ? -150 : 0) // Move the expanded toolbar to the left
+            
+            .animation(.easeInOut)
+            .onTapGesture {
+                withAnimation {
+                    isExpanded.toggle()
+                }
+            }
     }
 }
 
