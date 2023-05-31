@@ -39,7 +39,7 @@ struct ContentView: View {
 
                 Rectangle()
                     .frame(height: 50) // Set toolbar ribbon height
-                    .foregroundColor(.black) // Set black toolbar color
+                    .foregroundColor(.blue) // Set black toolbar color
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white, lineWidth: 2) // Set white outline
