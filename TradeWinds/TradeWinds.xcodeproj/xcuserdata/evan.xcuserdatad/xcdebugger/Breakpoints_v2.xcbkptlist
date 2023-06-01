@@ -20,5 +20,53 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4ECFD352-47B0-4351-8538-9B310C285AF4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TradeWinds/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4ECFD352-47B0-4351-8538-9B310C285AF4 - c8f89cfd76688a30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of TradeWinds.ContentView.isExpanded : Swift.Bool"
+                  moduleName = "TradeWinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evan/Documents/GitHub/TradeWinds/TradeWinds/TradeWinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "4ECFD352-47B0-4351-8538-9B310C285AF4 - 1755e3d32ec866a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TradeWinds.ContentView.init() -&gt; TradeWinds.ContentView"
+                  moduleName = "TradeWinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evan/Documents/GitHub/TradeWinds/TradeWinds/TradeWinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
