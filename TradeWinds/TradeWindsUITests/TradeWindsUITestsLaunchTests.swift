@@ -17,7 +17,6 @@ final class TradeWindsUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
 
