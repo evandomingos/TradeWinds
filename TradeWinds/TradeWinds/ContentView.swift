@@ -21,7 +21,6 @@ struct ToolbarIcon: View {
 
 struct ContentView: View {
     @State private var isExpanded = false
-    @State private var isCollapsed = false
     
     var body: some View {
         ZStack {
@@ -41,20 +40,30 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
-                if isCollapsed {
-                    CollapsedToolbarView(isCollapsed: $isCollapsed)
-                } else {
-                    ExpandedToolbarView(isExpanded: $isExpanded)
-                        .transition(.move(edge: .leading))
+                HStack {
+                    if isExpanded {
+                        ExpandedToolbarView(isExpanded: $isExpanded)
+                            .transition(.move(edge: .leading))
+                    }
+                    
+                    Spacer() // Add a spacer to push the circle to the right
+                    
+                    Circle()
+                        .frame(width: 50, height: 50) // Set circle size
+                        .foregroundColor(.blue) // Set blue circle color
+                        .overlay(
+                            Image(systemName: isExpanded ? "arrow.right" : "arrow.left")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .onTapGesture {
+                                    withAnimation {
+                                        isExpanded.toggle()
+                                    }
+                                }
+                        )
                 }
-                
-                Spacer() // Add spacer for proper alignment
-                
-                if !isExpanded {
-                    CircleButton(isCollapsed: $isCollapsed)
-                }
+                .padding(.trailing, 20) // Adjust the value based on your needs
             }
-            .padding(.trailing, 20) // Adjust the value based on your needs
         }
     }
 }
@@ -64,7 +73,7 @@ struct ExpandedToolbarView: View {
     
     var body: some View {
         ZStack(alignment: .trailing) {
-            Capsule(style: .continuous)
+            RoundedRectangle(cornerRadius: 25)
                 .foregroundColor(.blue)
                 .frame(height: 50)
                 .padding(.trailing, 50) // Adjust the value based on your needs
@@ -75,15 +84,6 @@ struct ExpandedToolbarView: View {
                 ToolbarIcon(systemName: "compass.drawing")
                 ToolbarIcon(systemName: "wrench.and.screwdriver")
                 ToolbarIcon(systemName: "bag")
-                
-                Image(systemName: "arrow.right")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        withAnimation {
-                            isExpanded.toggle()
-                        }
-                    }
             }
             .padding(.leading, 60) // Adjust the value based on your needs
         }
@@ -96,56 +96,8 @@ struct ExpandedToolbarView: View {
     }
 }
 
-struct CollapsedToolbarView: View {
-    @Binding var isCollapsed: Bool
-    
-    var body: some View {
-        HStack {
-            Spacer()
-            
-            ToolbarIcon(systemName: "cloud.sun")
-            ToolbarIcon(systemName: "dollarsign")
-            //ToolbarIcon(systemName: "")
-            ToolbarIcon(systemName: "compass.drawing")
-            ToolbarIcon(systemName: "wrench.and.screwdriver")
-            ToolbarIcon(systemName: "bag")
-            
-            Image(systemName: "arrow.right")
-                .font(.system(size: 20))
-                .foregroundColor(.white)
-                .onTapGesture {
-                    withAnimation {
-                        isCollapsed.toggle()
-                    }
-                }
-                .padding(.leading, 10) // Adjust the value based on your needs
-            
-            Spacer()
-        }
-        .padding(.horizontal, 20) // Adjust the value based on your needs
-        .frame(height: 50)
-        .background(Color.blue)
-        .cornerRadius(25)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
-
-struct CircleButton: View {
-    @Binding var isCollapsed: Bool
-    
-    var body: some View {
-        Button(action: {
-            withAnimation {
-                isCollapsed.toggle()
-            }
-        }) {
-            Circle()
-                            .frame(width: 50, height: 50) // Set circle size
-                            .foregroundColor(.blue) // Set blue circle color
-                            .overlay(
-                                Image(systemName: isCollapsed ? "arrow.right" : "arrow.left")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(.white)
-                            )
-                    }
-                }
-            }
