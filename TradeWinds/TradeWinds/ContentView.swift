@@ -105,6 +105,7 @@ struct CollapsedToolbarView: View {
             
             ToolbarIcon(systemName: "cloud.sun")
             ToolbarIcon(systemName: "dollarsign")
+            //ToolbarIcon(systemName: "")
             ToolbarIcon(systemName: "compass.drawing")
             ToolbarIcon(systemName: "wrench.and.screwdriver")
             ToolbarIcon(systemName: "bag")
