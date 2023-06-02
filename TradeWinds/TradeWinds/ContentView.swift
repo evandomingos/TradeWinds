@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-import 
+//import
 struct ToolbarIcon: View {
     let systemName: String
     
@@ -84,7 +84,11 @@ struct ExpandedToolbarView: View {
                 ToolbarIcon(systemName: "dollarsign")
                 ToolbarIcon(systemName: "compass.drawing")
                 ToolbarIcon(systemName: "wrench.and.screwdriver")
+                ToolbarIcon(systemName: "fork.knife.circle")
                 ToolbarIcon(systemName: "bag")
+                ToolbarIcon(systemName: "text.bubble")
+                ToolbarIcon(systemName: "magnifyingglass.circle")
+
             }
             .padding(.leading, 60) // Adjust the value based on your needs
         }
