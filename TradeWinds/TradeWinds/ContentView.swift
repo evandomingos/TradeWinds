@@ -47,13 +47,13 @@ struct ContentView: View {
                             .transition(.move(edge: .leading))
                     }
                     
-                    Spacer() // Add a spacer to push the circle to the right
+                    Spacer() // Add a spacer to push the capsule to the right
                     
-                    Circle()
-                        .frame(width: 50, height: 50) // Set circle size
-                        .foregroundColor(.blue) // Set blue circle color
+                    Capsule()
+                        .frame(width: isExpanded ? 300 : 50, height: 50) // Set capsule size
+                        .foregroundColor(.blue) // Set blue capsule color
                         .overlay(
-                            Image(systemName: isExpanded ? "arrow.right" : "arrow.left")
+                            Image(systemName: isExpanded ? "chevron.right.2" : "chevron.left.2")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .onTapGesture {
@@ -79,7 +79,7 @@ struct ExpandedToolbarView: View {
                 .frame(height: 50)
                 .padding(.trailing, 50) // Adjust the value based on your needs
             
-            HStack(spacing: 10) {
+            HStack(spacing: isExpanded ? 10 : 0) {
                 ToolbarIcon(systemName: "cloud.sun")
                 ToolbarIcon(systemName: "dollarsign")
                 ToolbarIcon(systemName: "compass.drawing")
@@ -88,9 +88,8 @@ struct ExpandedToolbarView: View {
                 ToolbarIcon(systemName: "bag")
                 ToolbarIcon(systemName: "text.bubble")
                 ToolbarIcon(systemName: "magnifyingglass.circle")
-
             }
-            .padding(.leading, 60) // Adjust the value based on your needs
+            .padding(.leading, isExpanded ? 10 : 60) // Adjust the value based on your needs
         }
         .offset(x: isExpanded ? 0 : 150) // Move the expanded toolbar to the right
         .onTapGesture {
@@ -98,11 +97,5 @@ struct ExpandedToolbarView: View {
                 isExpanded.toggle()
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
